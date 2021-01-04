@@ -1,33 +1,30 @@
-// window.addEventListener('scroll', () => {
-//     document.querySelector('.home img').style.bottom = `${scrollY}px`;
-// });
+
 let mid = document.getElementsByClassName('mid');
+let para = document.getElementsByClassName('move-para');
+
 window.addEventListener('scroll', () => {
-
-    // about_mid.forEach(elem => {
-    //     elem.style.transform = `translateY(${-scrollY}px)`;
-    // });
-    let arr = [0,680];
+    let arr = [0, 680];
     for (let i = 0; i < 2; i++) {
-        mid[i].style.transform = `translateY(${-scrollY+arr[i]}px)`;
+        let text = para[i].innerText.toUpperCase();
+        para[i].innerText = text;
+        mid[i].style.transform = `translateY(${-scrollY + arr[i]}px)`;
+        para[i].style.transform = `translateX(${scrollY - 400 - i * 600}px) `;
+        para[i].style.top = `${scrollY - 120 - i * 680}px `;
     }
-    // document.querySelector('.projects-right').style.right = `${scrollY-1100}px`;
-    // document.querySelector('.projects-right').style.position = `absolute`;
 
-    // document.querySelector('.projects-left').style.left = `${scrollY-1100}px`;
-    // document.querySelector('.projects-left').style.position = `absolute`;
+    // para[1].style.color = `#C81414`;
 
 });
 
 
 // <===mouse cursor===>
 
-if (window.innerWidth > 1000) {
+// if (window.innerWidth > 1000) {
 
-    window.addEventListener('mousemove', cursor);
-    let mouse_cursor = document.querySelector('.mouse-cursor')
-    function cursor(e) {
-        mouse_cursor.style.top = e.pageY + 'px';
-        mouse_cursor.style.left = e.pageX + 'px';
-    }
-}
+//     window.addEventListener('mousemove', cursor);
+//     let mouse_cursor = document.querySelector('.mouse-cursor')
+//     function cursor(e) {
+//         mouse_cursor.style.top = e.pageY + 'px';
+//         mouse_cursor.style.left = e.pageX + 'px';
+//     }
+// }
