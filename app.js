@@ -1,6 +1,8 @@
 
-let mid = document.getElementsByClassName('mid');
-let para = document.getElementsByClassName('move-para');
+const mid = document.getElementsByClassName('mid');
+const para = document.getElementsByClassName('move-para');
+const mouse_cursor = document.querySelector('.mouse-cursor')
+
 
 window.addEventListener('scroll', () => {
     let arr = [0, 680];
@@ -12,19 +14,7 @@ window.addEventListener('scroll', () => {
         para[i].style.top = `${scrollY - 120 - i * 680}px `;
     }
 
-    // para[1].style.color = `#C81414`;
+    mouse_cursor.style.display = 'none';
 
 });
 
-
-// <===mouse cursor===>
-
-// if (window.innerWidth > 1000) {
-
-//     window.addEventListener('mousemove', cursor);
-//     let mouse_cursor = document.querySelector('.mouse-cursor')
-//     function cursor(e) {
-//         mouse_cursor.style.top = e.pageY + 'px';
-//         mouse_cursor.style.left = e.pageX + 'px';
-//     }
-// }
