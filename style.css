@@ -198,6 +198,7 @@ p,h6{
     background-size: contain;
     background-repeat: no-repeat;
     padding: 0.5rem;
+    overflow: hidden;
 }
 
 .about-left{ 
@@ -209,6 +210,7 @@ p,h6{
     align-items: center;
     padding: 0.5rem;
     padding-top: 3rem;
+    overflow: hidden;
  }
 .about-right{ 
     grid-column: 4/6;
@@ -217,7 +219,8 @@ p,h6{
     text-align: center;
     padding: 0.5rem;
     padding-top: 3rem;
-    background-color: #1b1b1b;
+    background-color:#C81414;
+    overflow: hidden;
  }
 
  .about-head{
@@ -315,12 +318,13 @@ p,h6{
          opacity: 0.6;
          top: 0rem;
      }
+     
      .container{ margin:0  0.5rem; padding: 0; }
      .move-para{ display: none; }
      .mid{ display: none; }
      .about-left{ grid-row: 2/3; grid-column: 1/6; }
      .about-right{ grid-row: 3/4; grid-column: 1/6;}
-     .about-grid{ grid-template-rows: 1fr 1.5fr 1.4fr}
+     .about-grid{ grid-template-rows: 1fr 1.5fr 1.4fr; grid-row-gap: 1rem;}
      .about-grid{ background: black;}
      .about{ max-height: 700px; }
      .projects-grid{ max-height: 700px; margin-bottom: 3rem;}
