@@ -35,7 +35,7 @@
 
     <div class="container space-between">
       <div class="logo">Portfolio</div>
-      <div class="menu">Menu</div>
+      <div class="menu"><i class="fas fa-bars" style="font-size: 1.2rem;"></i></div>
     </div>
 
 
@@ -86,8 +86,8 @@
   </div>
 
 
-  <div class="full-container about"  data-name="ABOUT">
-    <div class="container red">
+  <div class="full-container about" data-name="ABOUT">
+    <div class="container red about-container">
       <div class="about-grid">
         <div class="about-head">
           <h2>ABOUT ME</h2>
@@ -119,48 +119,48 @@
 
   <div class="full-container projects" data-name="PROJECTS">
     <div class="container projects-container">
-      <div class="div projects-head">
+
+      <div class="projects-head">
         <h2>PROJECTS</h2>
         <div class="head-line"></div>
       </div>
-      
 
       <div class="projects-grid">
-        <div class="projects-text" data-aos = "fade-right">
+        <div class="projects-text" data-aos="fade-right">
           <h4>An API based NEWS App</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit,
             consectetur adipisicing elit. Qui, quasi.</p>
           <div class="home-btn"><button>Read More</button></div>
           <div class="line"></div>
         </div>
-        <div class="projects-image" data-aos = "fade-left">
-          <img src="news.jpg" alt="">
+        <div class="projects-image" data-aos="fade-left">
+          <img data-aos="zoom-out" src="news.jpg" alt="">
         </div>
       </div>
 
       <div class="projects-grid">
-        <div class="projects-image" data-aos = "fade-right">
-          <img src="news.jpg" alt="">
+        <div class="projects-image" data-aos="fade-right">
+          <img data-aos="zoom-out" src="pro-2.jpg" alt="">
         </div>
-        <div class="projects-text" data-aos = "fade-left">
+        <div class="projects-text" data-aos="fade-left">
           <h4>An API based NEWS App</h4>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, sequi?
-            consectetur adipisicing elit. Qui, quasi.</p>
+            consectetur adipisicing elit. Qui</p>
           <div class="home-btn"><button>Read More</button></div>
           <div class="line"></div>
         </div>
       </div>
 
       <div class="projects-grid">
-        <div class="projects-text" data-aos = "fade-right">
+        <div class="projects-text" data-aos="fade-right">
           <h4>An API based NEWS App</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus!
-            consectetur adipisicing elit. Qui, quasi.</p>
+            consectetur adipisicing elit</p>
           <div class="home-btn"><button>Read More</button></div>
           <div class="line"></div>
         </div>
-        <div class="projects-image" data-aos = "fade-left">
-          <img src="news.jpg" alt="">
+        <div class="projects-image" data-aos="fade-left">
+          <img data-aos="zoom-out" src="pro-3.jpg" alt="">
         </div>
       </div>
 
@@ -171,13 +171,70 @@
   <!-- <<=====projects page ends===> -->
 
 
+  <!-- <<=====skills page starts===> -->
+  <div class="full-container skills-container">
+    <div class="container skills">
+
+      <div class="skills-head">
+        <h2>SKILLS</h2>
+        <div class="head-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill">
+          <div class="skill-image"><img data-aos="zoom-out" src="skill/1.jpg" alt=""></div>
+          <div class="skill-para">
+            <div>
+              <h3>Coding</h3>
+              <ul>
+                <li>C++</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-image"><img  data-aos="zoom-out" src="skill/2.jpg" alt=""></div>
+          <div class="skill-para">
+            <div>
+              <h3>Web Development</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-image"><img  data-aos="zoom-out" src="skill/3.jpg" alt=""></div>
+          <div class="skill-para">
+            <div>
+              <h3>Design</h3>
+              <ul>
+                <li>3D CAD Models</li>
+                <li>Web Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- <<=====skills page ends===> -->
+
   <!-- <<=====contact page starts===> -->
-  <!-- <<=====projects page ends===> -->
+  <!-- <<=====contact page ends===> -->
 
-
-  <script src="app.js"></script>
 
  
+
+
   <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -185,12 +242,16 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   -->
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js" integrity="sha512-aqhdrigR8ePLi7IhiGrZz4APv1VktO5eCavRmavrNSk1Ut/s/WVlDwH94SeCqAiM0lm/s8mjtjaDhfevv2Zauw==" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+  
+  <script src="hover.js"></script>
+  <script src="app.js"></script>
   <script>
-    AOS.init({duration: 1050, delay:200, offset:70});
-  </script> 
+    AOS.init({ duration: 1050, delay: 200, offset: 70 });
+  </script>
 </body>
 
 </html>
