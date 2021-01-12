@@ -529,3 +529,7 @@ p,h6{
      .line{ display: none; }
      button{ padding: 0.3rem;font-size: 9px; border-radius: 15px;}
 }
+
+.about, .skills-container, .projects{
+    margin-bottom: clamp(3rem,10vw,7rem);
+}
