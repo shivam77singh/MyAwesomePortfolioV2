@@ -47,8 +47,8 @@ window.addEventListener('scroll', () => {
 new hoverEffect({
     parent: document.querySelector('.contact-image'),
     intensity: 0.3,
-    image1: './skill/map1.webp',
-    image2: './skill/map5.jpg',
+    image1: './anim/map1.webp',
+    image2: './anim/map5.jpg',
     displacementImage: './anim/heightMap.png'
 
 })
